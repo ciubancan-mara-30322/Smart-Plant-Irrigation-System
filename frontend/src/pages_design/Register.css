@@ -1,0 +1,134 @@
+:root {
+  --primary-green: #10b981;
+  --dark-green: hsl(161, 94%, 30%);
+  --mint-green: #e1f5ed; 
+  --pale-pink: #fce7f3; 
+  --accent-pink: #f9a8d4; 
+  --text-main: #1f2937;
+  --bg-gradient: linear-gradient(135deg, #f0fdf4 0%, #fdf2f8 100%);
+}
+
+
+.auth-card {
+  display: flex;
+  background: transparent;
+  width: 100%;
+  max-width: 900px;
+  min-height: 600px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  flex-direction: row-reverse; 
+}
+
+/* --- Form Section --- */
+.auth-form-section {
+  flex: 1.2;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background-color: var(--mint-green); 
+}
+
+.auth-form-section h2 {
+  font-size: 2.2rem;
+  color: var(--text-main);
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.auth-form-section p {
+  color: #4b5563;
+  margin-bottom: 25px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid #c3e6d9;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #ffffff; 
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background: var(--dark-green);
+  transform: translateY(-2px);
+}
+
+/* --- Banner Section --- */
+.auth-banner {
+  flex: 1;
+  background-color: var(--pale-pink); 
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.auth-banner h3 {
+  font-size: 1.8rem;
+  color: var(--text-main);
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.btn-switch {
+  padding: 13px 35px;
+  background: #ffffff; 
+  color: var(--text-main);
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.btn-switch:hover {
+  background: var(--mint-green);
+  transform: scale(1.05);
+}
+
+@media (max-width: 850px) {
+  .auth-card {
+    flex-direction: column; 
+    max-width: 450px;
+  }
+}
